@@ -1,0 +1,22 @@
+{
+  "name": "yannick-steinmann.github.io",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yannick-steinmann/yannick-steinmann.github.io.git"
+  },
+  "author": "Yannick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yannick-steinmann/yannick-steinmann.github.io/issues"
+  },
+  "homepage": "https://github.com/yannick-steinmann/yannick-steinmann.github.io#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

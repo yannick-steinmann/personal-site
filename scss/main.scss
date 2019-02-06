@@ -1,0 +1,118 @@
+$primary-color: black;
+$secondary-color: grey;
+$highlight-color: #ff0022;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font: 15px/1.5 "Major Mono Display", monospace;
+  //background-image: url("../img/bg.jpeg");
+  //background-size: cover;
+  //background-position: center;
+  background-color: white;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Wrapper */
+.wrapper {
+  position: fixed;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  border: 1.5px solid $primary-color;
+}
+
+/* Wrapper Inner */
+.wrapper-inner {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80%;
+  margin: auto;
+  color: $primary-color;
+  font-size: 1.6rem;
+
+  h3 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 1.2rem;
+    text-transform: lowercase;
+  }
+}
+
+/* Social Links */
+.social-links {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10%;
+  list-style-type: none;
+}
+
+.social-links > li {
+  display: inline-block;
+}
+
+.social-link-item {
+  margin: 0px 15px;
+  //opacity: 0.8;
+  color: $primary-color;
+}
+
+.social-links .email-link-outer {
+  margin-top: 10px;
+  display: block;
+}
+
+.email-link {
+  color: $primary-color;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+  //opacity: 0.8;
+}
+
+/* Hover and Focus States */
+.email-link:hover,
+.email-link:focus {
+  opacity: 1;
+  color: $highlight-color;
+}
+.social-link-item:hover {
+  opacity: 1;
+  color: $highlight-color;
+}
+
+/* ************* */
+/* Media Queries */
+/* ************* */
+
+/* For tablet viewers */
+@media (max-width: 768px) {
+  .wrapper-inner {
+    font-size: 1rem;
+    //color: green;
+
+    h3 {
+      font-size: 1rem;
+    }
+  }
+}
+
+/* For mobile viewers */
+@media (max-width: 480px) {
+  .wrapper-inner {
+    font-size: 0.8rem;
+
+    h3 {
+      font-size: 1rem;
+    }
+  }
+
+  .social-link-item {
+    margin: 0px 12px;
+  }
+}
