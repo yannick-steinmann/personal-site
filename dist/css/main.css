@@ -10,6 +10,13 @@ body {
   text-align: center;
 }
 
+::selection {
+  background: red; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: red; /* Gecko Browsers */
+}
+
 .wrapper-particles {
   position: fixed;
   top: 10px;
