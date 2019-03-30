@@ -5,16 +5,9 @@
 
 body {
   font: 15px/1.5 "Major Mono Display", monospace;
-  background-color: white;
+  background-image: url("../img/bg-ocean.png");
   height: 100vh;
   text-align: center;
-}
-
-::selection {
-  background: red; /* WebKit/Blink Browsers */
-}
-::-moz-selection {
-  background: red; /* Gecko Browsers */
 }
 
 .wrapper-particles {
@@ -37,7 +30,7 @@ body {
   bottom: 10px;
   left: 10px;
   right: 10px;
-  border: 1.5px solid black;
+  border: 1.5px solid white;
 }
 
 /* Wrapper Inner */
@@ -47,7 +40,7 @@ body {
   transform: translateY(-50%);
   width: 80%;
   margin: auto;
-  color: black;
+  color: white;
   font-size: 1.6rem;
 }
 .wrapper-inner h3 {
@@ -71,7 +64,7 @@ body {
 
 .social-link-item {
   margin: 0px 15px;
-  color: black;
+  color: white;
 }
 
 .social-links .email-link-outer {
@@ -80,7 +73,7 @@ body {
 }
 
 .email-link {
-  color: black;
+  color: white;
   text-decoration: none;
   font-family: "Roboto Mono", monospace;
 }
@@ -90,11 +83,19 @@ body {
 .email-link:focus {
   opacity: 1;
   color: #ff0022;
+  font-weight: 900;
 }
 
 .social-link-item:hover {
   opacity: 1;
   color: #ff0022;
+}
+
+::selection {
+  background: #39ff14; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #39ff14; /* Gecko Browsers */
 }
 
 /* ************* */
