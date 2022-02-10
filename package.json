@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/yannick-steinmann/yannick-steinmann.github.io#readme",
   "dependencies": {
-    "node-sass": "^4.11.0"
+    "node-sass": "^7.0.0"
   }
 }
